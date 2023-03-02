@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputerStore.Store"
+             >
+
+
+
+    <VerticalStackLayout BackgroundColor="Red">
+    <VerticalStackLayout Margin="30" BackgroundColor="White" >
+
+            <!--<Grid ColumnDefinitions="Auto,Auto,10,Auto,Auto" 
+          RowDefinitions="Auto,Auto,Auto,Auto">-->
+
+            <Grid ColumnDefinitions="25*,50*,25*,25*,75*"
+              RowDefinitions="*">
+                <Label Text="CPU" Grid.Column="1" Grid.Row="0" FontSize="Medium" HorizontalOptions="End"/>
+                <Label Text="Storage" Grid.Column="4" Grid.Row="0" FontSize="Medium"/>
+            </Grid>
+                <Grid ColumnDefinitions="25*,75*,25*,25*,50*" 
+          RowDefinitions="*,*,*,*">
+          
+          
+            
+            <RadioButton Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" x:Name="i3" CheckedChanged="i3_CheckedChanged"/>
+                <Label Text="Core i3" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+                <CheckBox x:Name="radiobutton_SSD" Grid.Column="3" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Label Text="SSD" Grid.Column="4" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+
+            <RadioButton Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" x:Name="i5" CheckedChanged="i5_CheckedChanged"/>
+            <Label Text="Core i5" Grid.Column="1" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+                <CheckBox x:Name="radiobutton_HDD"  Grid.Column="3" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="HDD" Grid.Column="4" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+
+            <RadioButton Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" x:Name="i7" CheckedChanged="i7_CheckedChanged"/>
+            <Label Text="Core i7" Grid.Column="1" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+        
+            <RadioButton Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" x:Name="i9" CheckedChanged="i9_CheckedChanged"/>
+            <Label Text="Core i9" Grid.Column="1" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium"/>
+
+
+        </Grid >
+           
+            <VerticalStackLayout>
+                <Label Text="Monitor" FontSize="Medium" HorizontalOptions="Center"/>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <RadioButton HorizontalOptions="Center" />
+                    <Label Text="Philips" FontSize="Medium"  HorizontalOptions="Start"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout  HorizontalOptions="Center">
+                    <RadioButton HorizontalOptions="Center" />
+                    <Label Text="    NEC   " FontSize="Medium" HorizontalOptions="Start"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="Center" >
+                    <RadioButton  />
+                    <Label Text="      HP      " FontSize="Medium" HorizontalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+    </VerticalStackLayout>
+    </VerticalStackLayout>
+
+
+
+
+
+
+
+
+</ContentPage>

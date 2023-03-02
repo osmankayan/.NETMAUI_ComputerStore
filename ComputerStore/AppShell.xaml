@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ComputerStore.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ComputerStore"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        
+        <Tab Title="Home" Icon="home.png"  >
+            <ShellContent ContentTemplate="{DataTemplate local:Home}" Route="Home" />
+        </Tab>
+
+        <Tab Title="Store" Icon="store.png" >
+            <ShellContent ContentTemplate="{DataTemplate local:Store}" Route="Store" />
+        </Tab>
+
+        <Tab Title="Shop" Icon="shop.png" >
+            <ShellContent ContentTemplate="{DataTemplate local:Shop}" Route="Shop" />
+        </Tab>
+
+        <Tab Title="Payment" Icon="payment.png" >
+            <ShellContent ContentTemplate="{DataTemplate local:Payment}" Route="Payment" />
+        </Tab>
+    </TabBar>
+
+</Shell>

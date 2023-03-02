@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputerStore.Shop">
+
+    <VerticalStackLayout BackgroundColor="Red">
+        <VerticalStackLayout BackgroundColor="White" Margin="30">
+
+            <Label Text="Memory Size GB" HorizontalOptions="Center" FontSize="Medium"/>
+            <Stepper x:Name="memory_stepper"  Maximum="16" Minimum="4" Increment="4" ValueChanged="memory_stepper_ValueChanged" HorizontalOptions="Center"/>
+            <Label x:Name=" memorylabel" HorizontalOptions="Center" />
+            <Label Text="Storage Size GB" HorizontalOptions="Center" FontSize="Medium"/>
+            <Stepper x:Name="storage_stepper" HorizontalOptions="Center" ValueChanged="storage_stepper_ValueChanged" Increment="500" Maximum="1000" Minimum="500" Value="500"/>
+            <Label x:Name=" storagelabel" HorizontalOptions="Center" />
+            <Label Text="Monitor Size in " HorizontalOptions="Center" FontSize="Medium" />
+            <Stepper x:Name="monitorsize_stepper" Maximum="23" Minimum="17" Increment="3" HorizontalOptions="Center" ValueChanged="monitorsize_stepper_ValueChanged"/>
+            <Label x:Name=" monitorsizelabel" HorizontalOptions="Center" />
+            <Label x:Name="totallabel" Text="Total" FontSize="Medium" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

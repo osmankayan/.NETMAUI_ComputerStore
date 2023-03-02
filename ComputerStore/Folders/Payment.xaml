@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComputerStore.Payment">
+    <VerticalStackLayout BackgroundColor="Red">
+
+        <VerticalStackLayout BackgroundColor="White" Margin="30">
+            <Label Text="Cardholder Name"/>
+            <Entry/>
+            <Label Text="Card No"/>
+            <Entry/>
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Date" HorizontalOptions="End"/>
+                <Label Text="CVV" HorizontalOptions="End" Margin="20"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Entry HorizontalOptions="End"/>
+                <Entry HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <RadioButton/>
+                <Label Text="Cache"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <RadioButton/>
+                <Label Text="Installments"/>
+                
+            </HorizontalStackLayout>
+            <Label Text="{Binding Model1.lastpagetotal}"/>
+            <Button HorizontalOptions="Center" Text="Pay"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
